@@ -6,7 +6,7 @@ h1, h2, h3{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-p{
+p, ul, ol, li{
     font-family:Arial, Helvetica, sans-serif;
 }
 
