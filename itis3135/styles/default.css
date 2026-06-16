@@ -13,7 +13,7 @@ p, ul, ol, li{
     color:#fff3b0;
 }
 
-a{
+a, a:visited{
     color:#f6bd60;
 }
 
