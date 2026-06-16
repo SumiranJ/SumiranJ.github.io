@@ -1,19 +1,19 @@
 body{
-    background-color: #fff3b0;
+    background-color: #540b0e;
 }
 
 h1, h2, h3{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:#9a2e2b;
+    color:#e09f3e;
 
 }
 
 p, ul, ol, li{
     font-family:Arial, Helvetica, sans-serif;
-    color:#335C67;
+    color:#fff3b0;
 }
 
 a:link{
-    color:#e09f3e;
+    color:#f6bd60;
 }
 
