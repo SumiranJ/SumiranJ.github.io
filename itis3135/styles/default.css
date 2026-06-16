@@ -1,28 +1,19 @@
 body{
-    background-color: azure;
+    background-color: #fff3b0;
 }
 
 h1, h2, h3{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#9a2e2b;
+
 }
 
 p, ul, ol, li{
     font-family:Arial, Helvetica, sans-serif;
+    color:#335C67;
 }
 
 a:link{
-    color:orangered;
-}
-
-a:hover{
-    color:brown;
-}
-
-a:active{
-    color:maroon;
-}
-
-a:visited{
-    color:green;
+    color:#e09f3e;
 }
 
