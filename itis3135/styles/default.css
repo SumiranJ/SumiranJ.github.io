@@ -10,7 +10,12 @@ h1, h2, h3{
     color:#e09f3e;
 }
 
-p, ul, ol, li, figure, figcaption{
+figure, figcaption{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#cad2c5;
+}
+
+p, ul, ol, li{
     font-family:Arial, Helvetica, sans-serif;
     color:#fff3b0;
     text-align: left;
