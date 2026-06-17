@@ -8,7 +8,6 @@ body, header, footer{
 h1, h2, h3{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:#e09f3e;
-
 }
 
 p, ul, ol, li, figure, figcaption{
@@ -18,5 +17,5 @@ p, ul, ol, li, figure, figcaption{
 }
 
 a, a:visited{
-    color:#eae2b7;
+    color:#ffc0cb;
 }
