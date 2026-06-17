@@ -1,5 +1,8 @@
-body{
+body, header, footer{
     background-color: #540b0e;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align:center;
 }
 
 h1, h2, h3{
@@ -16,4 +19,3 @@ p, ul, ol, li{
 a, a:visited{
     color:#f6bd60;
 }
-
