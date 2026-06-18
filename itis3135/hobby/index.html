@@ -11,11 +11,12 @@
                 max-width: 800px;
                 margin: 0 auto;
                 text-align:center;
-                background-color:#ccff00;
+                background-color:#e1874c;
             }
 
             p, ul, ol, li{
                 color:#2d3748;
+                text-align:left;
             }
             h1, h2, h3{
                 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -29,14 +30,49 @@
             a, a:visited{
                 color:#1e3a2f;
             }
+
+            #what,
+            #who,
+            #when,
+            #where,
+            #how,
+            #why{
+                height: 800px;
+                border: 2px solid #c25a3f;
+                background-color: #ccff00;
+            }
         </style>
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
-            <h1>My Tennis Hobby</h1>
+        <header id="top">
+            <a href="#what">Home</a> | <a href="#who">About Me</a> | <a href="#when">When to Play</a> | 
+            <a href="#where">Best Locations</a> | <a href="#how">How to Prepare</a> | <a href="#why">Why Tennis?</a>
         </header>
-        <main></main>
+            <h1>My Tennis Hobby 🎾</h1>
+        </header>
+        <main>
+            <section id="what">
+                <h2>Home</h2>
+            </section>
+            <section id="who">
+                <h2>About Me</h2>
+            </section>
+            <section id="when">
+                <h2>When to Play</h2>
+            </section>
+            <section id="where">
+                <h2>Best Locations</h2>
+            </section>
+            <section id="how">
+                <h2>How to Prepare</h2>
+            </section>
+            <section id="why">
+                <h2>Why Tennis?</h2>
+            </section>
+
+            <a href="#top">Back to Top</a>
+        </main>
         <footer>
             <div class="footer-links">
                 <p>
