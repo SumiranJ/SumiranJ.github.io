@@ -37,17 +37,17 @@
                 color:#1e3a2f;
             }
 
-            .tab-content{
+            section{
                 border: 2px solid #c25a3f;
                 background-color: #ccff00;
                 padding:10px;
                 border-radius: 10px;
                 display:none;
             }
-            .tab-content.active{
+            section.active{
                 display:block;
             }
-            .tab-link.active{
+            nav a.active{
                 font-weight:bold;
             }
             
@@ -228,7 +228,7 @@
         <script>
             document.addEventListener("DOMContentLoaded", () => {
             const links = document.querySelectorAll(".tab-link");
-            const sections = document.querySelectorAll(".tab-content");
+            const sections = document.querySelectorAll("section");
 
             links.forEach((link) => {
                 link.addEventListener("click", (event) => {
