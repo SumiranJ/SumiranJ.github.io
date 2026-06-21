@@ -58,12 +58,12 @@
         <header>
             <h1>My Tennis Hobby 🎾</h1>
             <nav>
-                <a href="#" class="tab-link active" data-target="what">Home</a> 🎾 
-                <a href="#" class="tab-link" data-target="who">About Me</a> 🎾 
-                <a href="#" class="tab-link" data-target="when">Best Times & Seasons</a> 🎾 
-                <a href="#" class="tab-link" data-target="where">Best Locations</a> 🎾 
-                <a href="#" class="tab-link" data-target="how">How to Prepare</a> 🎾 
-                <a href="#" class="tab-link" data-target="why">Why Tennis?</a> 🎾 
+                <a href="#" class="active" data-target="what">Home</a> 🎾 
+                <a href="#" data-target="who">About Me</a> 🎾 
+                <a href="#" data-target="when">Best Times & Seasons</a> 🎾 
+                <a href="#" data-target="where">Best Locations</a> 🎾 
+                <a href="#" data-target="how">How to Prepare</a> 🎾 
+                <a href="#" data-target="why">Why Tennis?</a> 🎾 
                 <!-- <a href="#" class="tab-link" data-target="ai-prompts">Sources</a> -->
             </nav>
         </header>
@@ -227,7 +227,7 @@
         </footer>
         <script>
             document.addEventListener("DOMContentLoaded", () => {
-            const links = document.querySelectorAll(".tab-link");
+            const links = document.querySelectorAll("nav a");
             const sections = document.querySelectorAll("section");
 
             links.forEach((link) => {
