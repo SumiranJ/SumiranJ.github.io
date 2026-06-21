@@ -44,12 +44,10 @@
                 border-radius: 10px;
                 display:none;
             }
-            .tab-content .active{
+            .tab-content.active{
                 display:block;
             }
-            .tab-link .active{
-                font-weight: bold;
-            }
+            
         </style>
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     </head>
@@ -57,7 +55,7 @@
         <header>
             <h1>My Tennis Hobby 🎾</h1>
             <nav>
-                <a href="#" class="tab-link active" data-target="what">Home</a> 🎾 
+                <a href="#" class="tab-link active-link" data-target="what">Home</a> 🎾 
                 <a href="#" class="tab-link" data-target="who">About Me</a> 🎾 
                 <a href="#" class="tab-link" data-target="when">Best Times & Seasons</a> 🎾 
                 <a href="#" class="tab-link" data-target="where">Best Locations</a> 🎾 
@@ -67,7 +65,7 @@
             </nav>
         </header>
         <main>
-            <section id="what" class="tab-content active">
+            <section id="what" class="tab-content active-tab">
                 <h2>Home</h2>
                 <p>Tennis is a very fun and competitive sport, and I love to play this in my freetime. Tennis is easy to learn
                     for beginners and it is a nice way to be physically active and hang out with friends.
@@ -235,8 +233,8 @@
                 event.preventDefault(); 
 
 
-                links.forEach(l => l.classList.remove("active"));
-                sections.forEach(s => s.classList.remove("active"));
+                links.forEach((l) => l.classList.remove("active"));
+                sections.forEach((s) => s.classList.remove("active"));
 
 
                 link.classList.add("active");
@@ -247,6 +245,7 @@
                 
                 if (targetSection) {
                     targetSection.classList.add("active");
+                    // targetSection.classList.add("active-link");
                 }
                 });
             });
