@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/svg+xml" href="itis3135/images/updated_logo.svg"><!--I will change favicon-->
+        <link rel="icon" type="image/svg+xml" href="itis3135/images/updated_logo.svg">
         <link rel="icon" type="image/png" href="images/tennis-ball.png" />
         <title>Sumiran Juthuga 🎾 My Tennis Hobby</title>
         <style>
@@ -37,28 +37,37 @@
                 color:#1e3a2f;
             }
 
-            #what,
-            #who,
-            #when,
-            #where,
-            #how,
-            #why{
-                /* height: 800px; */
+            .tab-content{
                 border: 2px solid #c25a3f;
                 background-color: #ccff00;
                 padding:10px;
+                border-radius: 10px;
+                display:none;
+            }
+            .tab-content.active{
+                display:block;
+            }
+            .tab-link.active{
+                font-weight: bold;
             }
         </style>
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header id="top">
-            <a href="#what">Home</a> | <a href="#who">About Me</a> | <a href="#when">Best Times & Seasons</a> | 
-            <a href="#where">Best Locations</a> | <a href="#how">How to Prepare</a> | <a href="#why">Why Tennis?</a>
+        <header>
             <h1>My Tennis Hobby 🎾</h1>
+            <nav>
+                <a href="#" class="tab-link active" data-target="what">Home</a> 🎾 
+                <a href="#" class="tab-link" data-target="who">About Me</a> 🎾 
+                <a href="#" class="tab-link" data-target="when">Best Times & Seasons</a> 🎾 
+                <a href="#" class="tab-link" data-target="where">Best Locations</a> 🎾 
+                <a href="#" class="tab-link" data-target="how">How to Prepare</a> 🎾 
+                <a href="#" class="tab-link" data-target="why">Why Tennis?</a> 🎾 
+                <a href="#" class="tab-link" data-target="ai-prompts">Sources</a>
+            </nav>
         </header>
         <main>
-            <section id="what">
+            <section id="what" class="tab-content active">
                 <h2>Home</h2>
                 <p>Tennis is a very fun and competitive sport, and I love to play this in my freetime. Tennis is easy to learn
                     for beginners and it is a nice way to be physically active and hang out with friends.
@@ -76,7 +85,7 @@
                 </figcaption>
                 </figure>
             </section>
-            <section id="who">
+            <section id="who" class="tab-content">
                 <h2>About Me</h2>
                 <p>I first played tennis with my brothers at the apartment's tennis courts. Later, I attended a tennis practice 
                     club with my peers at elementary school. I got interested in this sport and continue to play it for 
@@ -88,7 +97,7 @@
                     <figcaption>It takes a lot of practice to become professionally capable to play tennis matches.</figcaption>
                 </figure>
             </section>
-            <section id="when">
+            <section id="when" class="tab-content">
                 <h2>Best Times & Seasons</h2>
                 <p>
                     Tennis is usually in the daytime or in the evening, when there is enough lighting. It is important to play 
@@ -136,7 +145,7 @@
 
                 </table>
             </section>
-            <section id="where">
+            <section id="where" class="tab-content">
                 <h2>Best Locations</h2>
                 <p>
                     Tennis courts are the best places to play and practice this hobby. According to research, there are over 
@@ -173,7 +182,7 @@
                 <p><em>AI Prompt used: "Create a photorealistic image of the Halton-Wagner Tennis Complex 
                         at UNC Charlotte filled with tennis players at each court."</em></p>
             </section>
-            <section id="how">
+            <section id="how" class="tab-content">
                 <h2>How to Prepare</h2>
                 <p>To start playing tennis, you would need to...</p>
                 <ol>
@@ -191,15 +200,18 @@
                     </li>
                 </ol>
             </section>
-            <section id="why">
+            <section id="why" class="tab-content">
                 <h2>Why Tennis?</h2>
                 <p>I love to play tennis because I feel refreshed when playing it. Tennis is good for the player's health 
                     and this hobby lets me hang out wih my friends. Playing tennis helps me stay motivated at the end of the 
                     day and I look forward to playing this sport for my individual well-being.
                 </p>
             </section>
+            <section id="ai-prompts" class="tab-content">
 
-            <a href="#top">Back to Top</a>
+            </section>
+
+
         </main>
         <footer>
             <div class="footer-links">
@@ -212,5 +224,34 @@
                 <p>Site designed by <a href="../../juthugaenterprises.com/">Juthuga Enterprises</a> &copy; 2026</p>
             </div>
         </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            const links = document.querySelectorAll(".tab-link");
+            const sections = document.querySelectorAll(".tab-content");
+
+            links.forEach(link => {
+                link.addEventListener("click", (event) => {
+
+                event.preventDefault(); 
+
+
+                links.forEach(l => l.classList.remove("active"));
+                sections.forEach(s => s.classList.remove("active"));
+
+
+                link.classList.add("active");
+
+                
+                const targetId = link.getAttribute("data-target");
+                const targetSection = document.getElementById(targetId);
+                
+                if (targetSection) {
+                    targetSection.classList.add("active");
+                }
+                });
+            });
+            });
+
+        </script>
     </body>
 </html>
