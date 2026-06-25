@@ -21,7 +21,7 @@ p, ul, ol, li{
     text-align: left;
 }
 
-header, footer p{
+header p, footer p{
     text-align: center;
 }
 
