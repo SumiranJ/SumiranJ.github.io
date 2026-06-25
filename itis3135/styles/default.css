@@ -24,6 +24,7 @@ p, ul, ol, li{
 
 header p, footer p{
     text-align: center;
+    font-size:16px;
 }
 
 a, a:visited{
