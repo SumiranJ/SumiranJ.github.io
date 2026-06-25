@@ -6,7 +6,7 @@ body, header, footer{
     font-size: 20px;
 }
 
-h1, h2, h3{
+h1, h2, h3, nav{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:#e09f3e;
 }
