@@ -21,6 +21,10 @@ p, ul, ol, li{
     text-align: left;
 }
 
+header, footer p{
+    text-align: center;
+}
+
 a, a:visited{
     color:#ffc0cb;
 }
