@@ -22,7 +22,8 @@ p, ul, ol, li{
     text-align: left;
 }
 
-header p, footer p{
+header p, 
+footer p{
     text-align: center;
     font-size:16px;
 }
