@@ -10,6 +10,7 @@ h1, h2, h3, nav{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:#e09f3e;
     white-space:nowrap;
+    font-size:4vw;
 }
 
 figure, figcaption{
