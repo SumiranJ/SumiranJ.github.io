@@ -9,6 +9,9 @@ body, header, footer{
 h1, h2, h3, nav{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:#e09f3e;
+}
+
+h1{
     white-space:nowrap;
     font-size:4vw;
 }
