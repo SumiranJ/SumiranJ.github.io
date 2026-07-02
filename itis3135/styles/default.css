@@ -28,7 +28,7 @@ footer p{
 }
 
 header h1{
-    max-width: max-content;
+    font-size:medium;
 }
 
 a, a:visited{
