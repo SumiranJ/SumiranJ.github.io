@@ -1,6 +1,6 @@
 body, header, footer{
     background-color: #540b0e;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     text-align:center;
     font-size: 20px;
@@ -9,8 +9,8 @@ body, header, footer{
 h1, h2, h3{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:#e09f3e;
-    width:100%;
-    max-width:100%;
+    /* width:100%;
+    max-width:100%; */
     font-size: clamp(2rem, 4vw, 3.2rem);
     white-space: nowrap;
 
