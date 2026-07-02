@@ -12,7 +12,7 @@ h1, h2, h3, nav{
 }
 
 #quote{
-    border:2px dashed #e09f3e;
+    text-align:center;
 }
 
 figure, figcaption{
