@@ -11,6 +11,9 @@ h1, h2, h3, nav{
     color:#e09f3e;
     width:100%;
     max-width:100%;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    white-space: nowrap;
+
 }
 
 #quote p{
