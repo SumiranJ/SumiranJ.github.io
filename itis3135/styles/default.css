@@ -6,7 +6,7 @@ body, header, footer{
     font-size: 20px;
 }
 
-h1, h2, h3, nav{
+h1, h2, h3{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:#e09f3e;
     width:100%;
@@ -14,6 +14,11 @@ h1, h2, h3, nav{
     font-size: clamp(2rem, 4vw, 3.2rem);
     white-space: nowrap;
 
+}
+
+nav{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#e09f3e;
 }
 
 #quote p{
