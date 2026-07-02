@@ -11,6 +11,9 @@ h1, h2, h3, nav{
     color:#e09f3e;
 }
 
+#quote{
+    border:2px dashed #e09f3e;
+}
 
 figure, figcaption{
     font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
