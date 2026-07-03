@@ -1,6 +1,6 @@
 body, header, footer{
     background-color: #540b0e;
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
     text-align:center;
     font-size: 20px;
@@ -15,7 +15,7 @@ h1, h2, h3, nav{
 
 
 
-#quote p{
+#quote{
     text-align:center;
 }
 
@@ -37,7 +37,7 @@ footer p{
 
 header nav ul{
     text-align: center;
-    font: size 18px;
+    font: size 16px;
     display:flex;
     flex-direction: row;
     justify-content:space-between;
