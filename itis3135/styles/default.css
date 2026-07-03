@@ -35,9 +35,12 @@ footer p{
     text-align: center;
 }
 
-header nav{
+header nav ul{
     text-align: center;
-    font-size:0.85em;
+    font-size:16px;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
 }
 
 a, a:visited{
