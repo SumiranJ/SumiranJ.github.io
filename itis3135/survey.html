@@ -16,7 +16,55 @@
     <div data-include="components/header.html"></div>
     <main>
         <h2>Survey</h2>
+        <p id="description">
+      Please fill out this form to register for the crochet classes.
+    </p><!--2-->
+        <form id="survey-form">
+
+            <label for="name" id="name-label">Name: </label>
+            <input id="name" type="text" placeholder = "e.g. Aaron Farr"
+            required /><!--4-->
+            <br>
+
+            <label for="email" id="email-label">Email: </label>
+            <input id="email" type="email" required placeholder="example@email.com"> <!--5-->
+            <br>
+
+            <label for="number" id="number-label">Age: </label>
+            <input id="number" type="number" min="7" max = "100" required/>
+            <hr>
+
+            <label name="drop-down">Stress Levels during the week:</label>
+            <select name="level" id="dropdown">
+            <option value="def" selected>[select]</option>
+            <option value="none">None</option>
+            <option value="beginner" >Low</option>
+            <option value="intermediate">Medium</option>
+            <option value = "advanced">High</option>
+            </select>
+            <hr>
+            <label id="availability">Best Availability to Exercise: </label><br>
+            <input type="radio" id="morning" name="availability" value="morning">
+            <label for="html">Morning</label><br>
+            <input type="radio" id="afternoon" name="availability" value="afternoon">
+            <label for="css">Afternoon</label><br>
+            <input type="radio" id="evening" name="availability" value="evening">
+            <label for="javascript">Evening</label>
+            <hr>
+            <label>Physical Fitness Goals:</label>
+            <br>
+            <input type="checkbox" value="heart">Improve Heart Health<br>
+            <input type="checkbox" value="muscles">Strengthen Muscles<br>
+            <input type="checkbox" value="weight-loss">Weight Loss
+            <hr>
+            <label for="comments">Additional Comments: </label>
+            <br>
+            <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comments here"></textarea>
+            <hr>
+            <input type="submit" id="submit">
+        </form>
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.min.js"></script>
 </body>
+</html>
