@@ -43,3 +43,17 @@ header nav{
 a, a:visited{
     color:#ffc0cb;
 }
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* input[type="password"], */
+input[type="text"], textarea {
+  appearance: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
