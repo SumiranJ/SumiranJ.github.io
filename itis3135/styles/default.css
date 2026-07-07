@@ -59,3 +59,13 @@ input[type="text"], input[type="email"],input[type="number"], select, textarea {
   padding: 2px;
   background-color:#0a192f;
 }
+
+#submit{
+    background-color: #0a192f; /* Changes the background color */
+    color: #fff3b0;            /* Changes the text color to your pale yellow */
+    border: 2px solid #fff3b0; /* Adds a matching colored border */
+    padding: 10px 20px;        /* Adds space inside the button */
+    font-size: 16px;           /* Makes the text readable */
+    cursor: pointer;           /* Changes mouse cursor to a hand on hover */
+    border-radius: 2px;        /* Slightly rounds the corners */
+}
