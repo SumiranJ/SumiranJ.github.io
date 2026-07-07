@@ -52,7 +52,7 @@ a, a:visited{
 } */
 
 /* input[type="password"], */
-input[type="text"], textarea {
+input[type="text"], input[type="email"],input[type="number"], select, textarea {
   appearance: none;
   border: 1px solid #ccc;
   border-radius: 2px;
