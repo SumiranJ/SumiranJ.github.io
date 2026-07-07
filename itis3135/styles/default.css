@@ -84,6 +84,10 @@ input[type="text"], input[type="email"],input[type="number"], select, textarea {
 .card{
   justify-content:space-between;
   display:flex;
+  height:250px;
+  border:1px solid;
+  border-color:#fff3b0;
+  background-color:#0a192f;
 }
 
 .left{
