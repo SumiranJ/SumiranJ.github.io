@@ -37,11 +37,11 @@
             
             <label for="stress-levels">Stress Levels during the week:</label>
             <select name="level" id="stress-levels">
-            <option value="def" selected>[select]</option>
-            <option value="none">None</option>
-            <option value="beginner" >Low</option>
-            <option value="intermediate">Medium</option>
-            <option value = "advanced">High</option>
+                <option value="" selected>[select]</option>
+                <option value="none">None</option>
+                <option value="low" >Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
             </select>
             <hr>
         
@@ -64,27 +64,24 @@
     
           
             
-            <!-- <label for="fitness-goals">Physical Fitness Goals:</label>
-            <br>
-            <label>
-                <input type="checkbox" value="heart" id="fitness-goals">Improve Heart Health<br>
-            </label>
-            <label>
-                <input type="checkbox" value="muscles" id="fitness-goals">Strengthen Muscles<br>
-            </label>
-            <label>
-                <input type="checkbox" value="weight-loss" id="fitness-goals">Weight Loss
-            </label> -->
             <label class="fitness-title">Physical Fitness Goals:</label>
             <br>
-            <label for="goal-heart">Improve Heart Health</label>
-            <input type="checkbox" id="goal-heart" class="fitness" value="heart">
+            <label for="goal-heart">
+                <input type="checkbox" id="goal-heart" class="fitness" value="heart">
+                Improve Heart Health
+            </label>
             <br>
-            <label for="goal-muscles">Strengthen Muscles</label>
-            <input type="checkbox" id="goal-muscles" class="fitness" value="muscles">
+
+            <label for="goal-muscles">
+                <input type="checkbox" id="goal-muscles" class="fitness" value="muscles">
+                Strengthen Muscles
+            </label>
             <br>
-            <label for="goal-weight">Weight Loss</label>
-            <input type="checkbox" id="goal-weight" class="fitness" value="weight-loss">
+
+            <label for="goal-weight">
+                <input type="checkbox" id="goal-weight" class="fitness" value="weight-loss">
+                Weight Loss
+            </label>
             <hr>
         
             <label for="comments">Additional Comments: </label>
