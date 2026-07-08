@@ -35,8 +35,8 @@
             
 
             
-            <label>Stress Levels during the week:</label>
-            <select name="level" id="dropdown">
+            <label for="stress-levels">Stress Levels during the week:</label>
+            <select name="level" id="stress-levels">
             <option value="def" selected>[select]</option>
             <option value="none">None</option>
             <option value="beginner" >Low</option>
@@ -46,28 +46,34 @@
             <hr>
         
 
-            
-            <label id="availability">Best Availability to Exercise: </label><br>
-            <input type="radio" id="morning" name="availability" value="morning">
-            <label for="morning">Morning</label><br>
-            <input type="radio" id="afternoon" name="availability" value="afternoon">
-            <label for="afternoon">Afternoon</label><br>
-            <input type="radio" id="evening" name="availability" value="evening">
-            <label for="evening">Evening</label>
+            <fieldset>
+                <!-- <label id="availability">Best Availability to Exercise: </label><br> -->
+
+                <legend>Best Availability to Exercise: </legend>
+
+                <input type="radio" id="morning" name="availability" value="morning">
+                <label for="morning">Morning</label><br>
+
+                <input type="radio" id="afternoon" name="availability" value="afternoon">
+                <label for="afternoon">Afternoon</label><br>
+
+                <input type="radio" id="evening" name="availability" value="evening">
+                <label for="evening">Evening</label>
+            </fieldset>
             <hr>
     
           
             
-            <label>Physical Fitness Goals:</label>
+            <label for="fitness-goals">Physical Fitness Goals:</label>
             <br>
             <label>
-                <input type="checkbox" value="heart" class="fitness">Improve Heart Health<br>
+                <input type="checkbox" value="heart" id="fitness-goals">Improve Heart Health<br>
             </label>
             <label>
-                <input type="checkbox" value="muscles" class="fitness">Strengthen Muscles<br>
+                <input type="checkbox" value="muscles" id="fitness-goals">Strengthen Muscles<br>
             </label>
             <label>
-                <input type="checkbox" value="weight-loss" class="fitness">Weight Loss
+                <input type="checkbox" value="weight-loss" id="fitness-goals">Weight Loss
             </label>
             <hr>
         

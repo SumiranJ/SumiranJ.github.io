@@ -63,7 +63,7 @@ input[type="text"], input[type="email"],input[type="number"], select, textarea {
     border-radius: 2px;
 }
 
-.fitness{
+#fitness-goals{
     display:inline-block;
     margin-bottom:5px;
 }
