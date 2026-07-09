@@ -33,6 +33,7 @@
                 <input type="text" id="last-name" value="Juthuga" placeholder="Enter your last name" required>
                 <br>
             </fieldset>
+
             <fieldset>
                 <legend>Mascot Information</legend>
                 <label for="mascot-adj">Mascot Adjective: </label>
@@ -43,6 +44,26 @@
                 <br>
                 <label for="divider">Divider: </label>
                 <input type="text" id="divider" value="|" placeholder="" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Picture</legend>
+                <label for="picture">Picture: </label>
+                <input type="file" id="picture" accept="image/*">
+                <br>
+                <label for="picture-caption">Picture Caption: </label>
+                <input type="text" id="picture-caption" value="At the Colvard building" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="personal-statement">Personal Statement</label>
+                <textarea id="personal-statement" rows="4" placeholder="Introduce yourself..." required>
+                    This is Sumiran Juthuga, a Computer Science senior studying with a concentration in Cybersecurity. 
+                    I am taking summer courses at UNC Charlotte for the second semester, and I am excited to dive into 
+                    practicing front-end development. I am interested in learning about the uses of the 
+                    latest technologies and how we can utilize them for the common good.
+                </textarea>
             </fieldset>
         </form>
     </main>
