@@ -99,3 +99,14 @@ input[type="text"], input[type="email"],input[type="number"], select, textarea {
   display:flex;
   align-self:flex-end;
 }
+
+.container{
+    width:700px;
+    padding:10px;
+}
+
+.input-width{
+    width:100%;
+    box-sizing:border-box;
+    padding:5px;   
+}

@@ -14,52 +14,52 @@
 <body>
     
     <div data-include="components/header.html"></div>
-    <main>
+    <main class="container">
         <h2>Introduction Form</h2>
         <h3>Please submit the form below</h3>
         <form>
             <fieldset>
                 <legend>Personal Information</legend>
                 <label for="first-name">First Name: </label>
-                <input type="text" id="first-name" value="Sumiran" placeholder="Enter your first name" required>
+                <input type="text" id="first-name" value="Sumiran" placeholder="Enter your first name" class="input-width" required>
                 <br>
                 <label for="middle-name">Middle Name/Initial (optional): </label>
-                <input type="text" id="middle-name" value="" placeholder="Enter middle name if applicable">
+                <input type="text" id="middle-name" value="" placeholder="Enter middle name if applicable" class="input-width">
                 <br>
                 <label for="nickname">Nickname (optional): </label>
-                <input type="text" id="nickname" value="&quot;Sum&quot;" placeholder="Enter nickname if applicable">
+                <input type="text" id="nickname" value="&quot;Sum&quot;" class="input-width" placeholder="Enter nickname if applicable">
                 <br>
                 <label for="last-name">Last Name: </label>
-                <input type="text" id="last-name" value="Juthuga" placeholder="Enter your last name" required>
+                <input type="text" id="last-name" value="Juthuga" placeholder="Enter your last name" class="input-width" required>
                 <br>
             </fieldset>
 
             <fieldset>
                 <legend>Mascot Information</legend>
                 <label for="mascot-adj">Mascot Adjective: </label>
-                <input type="text" id="mascot-adj" value="Serene" placeholder="Enter the adjective" required>
+                <input type="text" id="mascot-adj" value="Serene" placeholder="Enter the adjective" class="input-width" required>
                 <br>
                 <label for="mascot-animal">Mascot Animal: </label>
-                <input type="text" id="mascot-animal" value="Jackrabbit" placeholder="Enter the animal" required>
+                <input type="text" id="mascot-animal" value="Jackrabbit" placeholder="Enter the animal" class="input-width" required>
                 <br>
                 <label for="divider">Divider: </label>
-                <input type="text" id="divider" value="|" placeholder="" required>
+                <input type="text" id="divider" value="|" placeholder=""class="input-width" required>
             </fieldset>
 
             <fieldset>
                 <legend>Picture</legend>
                 <label for="picture">Picture: </label>
-                <input type="file" id="picture" accept="image/*">
+                <input type="file" id="picture" class="input-width" accept="image/*">
                 <br>
                 <label for="picture-caption">Picture Caption: </label>
-                <input type="text" id="picture-caption" value="At the Colvard building" required>
+                <input type="text" id="picture-caption" class="input-width" value="At the Colvard building" required>
             </fieldset>
 
             <fieldset>
                 <legend>Personal Details</legend>
                 <label for="personal-statement">Personal Statement: </label>
                 <br>
-                <textarea id="personal-statement" rows="4" cols="30" placeholder="Introduce yourself..." required>
+                <textarea id="personal-statement" rows="4" cols="30" class="input-width" placeholder="Introduce yourself..." required>
                     This is Sumiran Juthuga, a Computer Science senior studying with a concentration in Cybersecurity. 
                     I am taking summer courses at UNC Charlotte for the second semester, and I am excited to dive into 
                     practicing front-end development. I am interested in learning about the uses of the 
