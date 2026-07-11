@@ -22,7 +22,7 @@ figure, figcaption{
     color:#84eae6;
 }
 
-p, ul, ol, li, input, textarea, select, label, option, legend, input[type="checkbox"]{
+p, ul, ol, li, input, textarea, select, label, option, legend, input[type="checkbox"], code{
     font-family:Arial, Helvetica, sans-serif;
     color:#fff3b0;
     text-align: left;
@@ -131,14 +131,36 @@ input[type="text"], input[type="email"],input[type="number"], select, textarea {
   width:250px;
   height:100vh;
   /* background-color:#540b0e; */
-  border-right:2px solid #ccffaa;
+  /* border-right:2px solid #ccffaa; */
   overflow-y:auto;
+  overflow-x:hidden;
+  word-wrap:break-word;
+  flex-shrink:0;
+  box-sizing:border-box;
+
+}
+
+#navbar a{
+    display:block;
+    white-space: normal;
 }
 #main-doc{
   margin-left:270px;
   padding:20px;
   /* background-color:#540b0e; */
   /* color:#fff3b0; */
+}
+
+#main-section{
+    display: flex; 
+    width: 100%;
+    min-height: calc(100vh - 60px); /* Subtracts top navbar height */
+}
+
+.main-section{
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 @media (max-width:768px){
