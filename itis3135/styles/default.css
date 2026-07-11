@@ -184,7 +184,7 @@ input[type="text"], input[type="email"],input[type="number"], select, textarea {
       table,
       table td{
         font-family: Arial;
-        font-size:13px;
+        font-size:16px;
         border-collapse:collapse;
         padding: 10px 5px;
       }
