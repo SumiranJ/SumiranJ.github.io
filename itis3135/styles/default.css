@@ -388,10 +388,10 @@ span{
     }
 
     /* --- FEATURES SECTION --- */
-    .features-grid {
+    /* .features-grid {
       display: grid;
       margin-top:40px;
-    }
+    } */
 
     .feature-card {
       background: var(--white);

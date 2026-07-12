@@ -98,5 +98,13 @@
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script>
+        const clearButton = document.querySelector("button[type='button']");
+        const inputElements = Array.from(document.querySelectorAll("form input"));
+        clearButton.addEventListener("click", function () {
+        inputs.forEach((input) => (input.value = ""));
+        });
+
+    </script>
 </body>
 </html>
