@@ -177,74 +177,70 @@ input[type="text"], input[type="email"],input[type="number"], select, textarea {
 }
 
 
-      table, table td{
-        width:70%;
-        color:#0a192f;
-      }
-      table,
-      table td{
-        font-family: Arial;
-        font-size:16px;
-        border-collapse:collapse;
-        padding: 10px 5px;
-      }
-	  
-      table th{
-        background-image:linear-gradient( skyblue, cyan);
-      }
+table, table td{
+  width:70%;
+  color:#0a192f;
+}
+table,
+table td{
+  font-family: Arial;
+  font-size:16px;
+  border-collapse:collapse;
+  padding: 10px 5px;
+}
 
-      tr[class="in-stock"]{
-        background-image:linear-gradient(orange, white);
-      }
-      tr[class="restock"]{
-        background-image:linear-gradient( green,lightgreen);
-      }
-      tr[class="limited-stock"]{
-        background-image:linear-gradient( skyblue, magenta);
-      }
+table th{
+  background-image:linear-gradient( skyblue, cyan);
+}
+
+tr[class="in-stock"],
+tr[class="restock"],
+tr[class="limited-stock"]{
+  background-image:linear-gradient(orange, white);
+}
 
 
-      tr[class="restock"] span[class="status"]{
-        border:2px solid indianred;
-        background-image:linear-gradient(turquoise, cyan);
-      }
+tr[class="restock"] span[class="status"]{
+  border:2px solid indianred;
+  background-image:linear-gradient(turquoise, cyan);
+}
 
-      tr[class="in-stock"] span[class="status"]{
-        border:2px dashed maroon;
-        background-image:linear-gradient(green, white);
-      }
+tr[class="in-stock"] span[class="status"]{
+  border:2px dashed maroon;
+  background-image:linear-gradient(green, white);
+}
 
-      tr[class="limited-stock"] span[class="status"]{
-        border: 2px dotted brown;
-        background-image:linear-gradient(red, yellow);
-      }
+tr[class="limited-stock"] span[class="status"]{
+  border: 2px dotted brown;
+  background-image:linear-gradient(red, yellow);
+}
 
-      span[class="status"]{
-        padding:10px;
-      }
+span[class="status"]{
+  padding:10px;
+}
 
-      span{
-        display:inline-block;
-      }
+span{
+  display:inline-block;
+}
 
-      .in-stock .status{
-        border: 2px solid green;
-        background-image:linear-gradient(green, lightgreen);
-        padding: 5px 35px;
-        border-radius: 15px;
-      }
+.in-stock .status{
+  border: 2px solid green;
+  background-image:linear-gradient(green, lightgreen);
+  padding: 5px 35px;
+  border-radius: 15px;
+}
 
-      .restock .status{
-        border: 2px solid purple;
-        background-image:linear-gradient(orange, white);
-        padding: 5px 35px;
-        border-radius: 15px;
-      }
+.restock .status{
+  border: 2px solid purple;
+  background-image:linear-gradient(orange, white);
+  padding: 5px 35px;
+  border-radius: 15px;
+}
 
 
-      .limited-stock .status{
-        border: 3px dashed gray;
-        background-image: linear-gradient(red, white);
-        padding: 5px 35px;
-        border-radius:15px;
-      }
+.limited-stock .status{
+  border: 3px dashed gray;
+  background-image: linear-gradient(red, white);
+  padding: 5px 35px;
+  border-radius:15px;
+}
