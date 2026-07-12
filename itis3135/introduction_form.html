@@ -99,21 +99,18 @@
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.min.js"></script>
     <script>
-        // const clearButton = document.querySelector("button[type='button']");
-        // const inputElements = Array.from(document.querySelectorAll("form input"));
-        // clearButton.addEventListener("click", function () {
-        // inputs.forEach((input) => (input.value = ""));
-        // });
-
         document
         .querySelector("button[type='button']")
         .addEventListener("click", function (event) {
-            Array.from(document.querySelectorAll("form input")).forEach((input) => {
-            input.value = "";
+            const elements = document.querySelectorAll("form input, form textarea, form select");
+            Array.from(elements).forEach((element) => {
+                if (element.tagName === "SELECT") {
+                    element.selectedIndex = 0;
+                } else {
+                    element.value = "";
+                }
             });
         });
-
-
     </script>
 </body>
 </html>
