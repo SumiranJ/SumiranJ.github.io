@@ -45,9 +45,9 @@ a, a:visited{
 
 input[type="text"], input[type="email"],input[type="number"], select, textarea {
   appearance: none;
-  border: 1px solid #fff3b0;
+  /* border: 1px solid #fff3b0;
   border-radius: 2px;
-  padding: 5px;
+  padding: 5px; */
   background-color:#0a192f;
   width: 242px;
 }
