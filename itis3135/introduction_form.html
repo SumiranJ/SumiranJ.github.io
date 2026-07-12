@@ -91,6 +91,30 @@
                     HP, Windows 11 Home, AMD Ryzer laptop
                 </textarea>
             </fieldset>
+            <fieldset>
+                <legend>Courses I'm Taking</legend>
+                <label for="dept">Department: </label>
+                <input type="text" id="dept" value="ITSC" placeholder="Department" required>
+                <label for="num">Number: </label>
+                <input type="number" id="num" value="3146" placeholder="Number" required>
+                <label for="course-name">Course Name: </label>
+                <input type="text" id="course-name" value="Intro to Operating Systems & Networks" placeholder="Course Name" required>
+                <label for="reason">Reason: </label>
+                <input type="text" id="reason" 
+                value="For learning about the fundamentals of operating systems & the types of networking, so that I would be able to write efficient logic when coding"
+                required>
+                <br>
+                <label for="dept">Department: </label>
+                <input type="text" id="dept" value="ITIS" placeholder="Department" required>
+                <label for="num">Number: </label>
+                <input type="number" id="num" value="3135" placeholder="Number" required>
+                <label for="course-name">Course Name: </label>
+                <input type="text" id="course-name" value="Front-End Web App Development" placeholder="Course Name" required>
+                <label for="reason">Reason: </label>
+                <input type="text" id="reason" 
+                value="To learn about the basics of front end development to create useful applications"
+                required>
+            </fieldset>
             <button type="submit">Submit</button>
             <button type="reset">Reset</button>
             <button type="button">Clear</button>
@@ -102,7 +126,7 @@
         document
         .querySelector("button[type='button']")
         .addEventListener("click", function (event) {
-            const elements = document.querySelectorAll("form input, form textarea, form select");
+            const elements = document.querySelectorAll("form input, form textarea");
             Array.from(elements).forEach((element) => {
                 if (element.tagName === "SELECT") {
                     element.selectedIndex = 0;
