@@ -49,6 +49,7 @@ input[type="text"], input[type="email"],input[type="number"], select, textarea {
   border-radius: 2px;
   padding: 5px;
   background-color:#0a192f;
+  width: 242px;
 }
 
 #submit{ /* For styling the submit button */
@@ -256,3 +257,11 @@ span{
   border-radius:15px;
 }
 
+#intro-form label{
+  width: 350px;
+  display:inline-block;
+}
+
+input[type=button]{
+  background-color: #0a192f;
+}

@@ -15,8 +15,8 @@
     <div data-include="components/header.html"></div>
     <main class="container">
         <h2>Introduction Form</h2>
-        <h3>Please submit the form below</h3>
-        <form>
+        <p>Please submit the form below</p>
+        <form id="intro-form">
             <fieldset>
                 <legend>Personal Information</legend>
                 <label for="first-name">First Name</label>
@@ -67,20 +67,20 @@
                 <br>
                 <label for="personal-background">Personal Background</label>
                 <br>
-                <textarea id="personal-background" rows="4" cols="30" class="input-width" placeholder="Details about your background" required>
+                <textarea id="personal-background" rows="4" cols="20" class="input-width" placeholder="Details about your background" required>
                     I am originally from Atlanta, and I moved to Charlotte when I was in high school. 
                     I like to take walks, explore new places and read books in my free time.
                 </textarea>
                 <br>
                 <label for="professional-background">Professional Background</label>
                 <br>
-                <textarea id="professional-background" rows="4" cols="30" class="input-width" placeholder="Details about professional experience" required>
+                <textarea id="professional-background" rows="4" cols="20" class="input-width" placeholder="Details about professional experience" required>
                     I have worked in an internship that involves technology and marketing.
                 </textarea>
                 <br>
                 <label for="academic-background">Academic Background</label>
                 <br>
-                <textarea id="academic-background" rows="4" cols="30" class="input-width" placeholder="Details about academic background" required>
+                <textarea id="academic-background" rows="4" cols="20" class="input-width" placeholder="Details about academic background" required>
                     I am studying computer science with a concentration in cyber security. 
                     I plan to advance my knowledge through applying for internships that are related to blue team roles.
                 </textarea>
@@ -93,7 +93,7 @@
             </fieldset>
             <fieldset>
                 <legend>Courses I'm Taking</legend>
-                <label for="dept">Department: </label>
+                <!-- <label for="dept">Department: </label>
                 <input type="text" id="dept" value="ITSC" placeholder="Department" required>
                 <label for="num">Number: </label>
                 <input type="number" id="num" value="3146" placeholder="Number" required>
@@ -102,7 +102,7 @@
                 <label for="reason">Reason: </label>
                 <input type="text" id="reason" 
                 value="For learning about the fundamentals of operating systems & the types of networking, so that I would be able to write efficient logic when coding"
-                required>
+                required> -->
                 <div id="courses-container">
                     <div class="course-entry">
                     <label for="course-department-1">Department:</label>
@@ -113,7 +113,7 @@
                         value="ITSC" 
                         placeholder="Department" 
                         required
-                    >
+                    ><br/>
                     <label for="course-number-1">Course Number:</label>
                     <input 
                         type="text" 
@@ -122,7 +122,7 @@
                         value="3146" 
                         placeholder="Course Number" 
                         required
-                    >
+                    ><br/>
                     <label for="course-name-1">Course Name:</label>
                     <input 
                         type="text" 
@@ -131,7 +131,7 @@
                         value="Intro to Operating Systems & Networks" 
                         placeholder="Course Name" 
                         required
-                    >
+                    ><br/>
                     <label for="course-reason-1">Reason for Taking:</label>
                     <input 
                         type="text" 
@@ -141,8 +141,11 @@
                         placeholder="Reason" 
                         required
                     >
+                    </div>
                 </div>
-                <br>
+                <hr/>
+                <input type="button" id="add-course" value="Add Course"/>
+                <!-- <br>
                 <div id="courses-container">
                     <div class="course-entry">
                     <label for="course-department-2">Department:</label>
@@ -180,8 +183,8 @@
                         value="I am taking this course to improve my web design and coding skills." 
                         placeholder="Reason" 
                         required
-                    >
-                </div>
+                    > 
+                </div> -->
             </fieldset>
             
             <button type="reset">Reset</button>
@@ -205,6 +208,57 @@
                 }
             });
         });
+
+
+        document.getElementById("add-course").addEventListener("click",addCourse);
+        courseCount=1;
+        coursesContainer=document.getElementById("courses-container");
+
+        function addCourse() { 
+            courseCount += 1;
+            const courseEntry = document.createElement("div");
+            courseEntry.classList.add("course-entry");
+            courseEntry.innerHTML = `<hr/>
+            <label for="course-department-${courseCount}">Department:</label>
+            <input 
+                type="text" 
+                id="course-department-${courseCount}"
+                name="courseDepartment[]" 
+                placeholder="Department" 
+                required
+            >
+            <label for="course-number-${courseCount}">Course Number:</label>
+            <input 
+                type="text" 
+                id="course-number-${courseCount}"
+                name="courseNumber[]" 
+                placeholder="Course Number" 
+                required
+            >
+            <label for="course-name-${courseCount}">Course Name:</label>
+            <input 
+                type="text" 
+                id="course-name-${courseCount}"
+                name="courseName[]" 
+                placeholder="Course Name" 
+                required
+            >
+            <label for="course-reason-${courseCount}">Reason for Taking:</label>
+            <input 
+                type="text" 
+                id="course-reason-${courseCount}"
+                name="courseReason[]" 
+                placeholder="Reason" 
+                required
+            ><br/>
+            <button type="button" class="delete-course">Delete Course</button>
+            `;
+            coursesContainer.appendChild(courseEntry);
+            
+            courseEntry.querySelector(".delete-course").addEventListener("click", function () {
+                courseEntry.remove();
+            });
+        }
     </script>
 </body>
 </html>
