@@ -103,28 +103,98 @@
                 <input type="text" id="reason" 
                 value="For learning about the fundamentals of operating systems & the types of networking, so that I would be able to write efficient logic when coding"
                 required>
+                <div id="courses-container">
+                    <div class="course-entry">
+                    <label for="course-department-1">Department:</label>
+                    <input 
+                        type="text" 
+                        id="course-department-1"
+                        name="courseDepartment[]" 
+                        value="ITSC" 
+                        placeholder="Department" 
+                        required
+                    >
+                    <label for="course-number-1">Course Number:</label>
+                    <input 
+                        type="text" 
+                        id="course-number-1"
+                        name="courseNumber[]" 
+                        value="3146" 
+                        placeholder="Course Number" 
+                        required
+                    >
+                    <label for="course-name-1">Course Name:</label>
+                    <input 
+                        type="text" 
+                        id="course-name-1"
+                        name="courseName[]" 
+                        value="Intro to Operating Systems & Networks" 
+                        placeholder="Course Name" 
+                        required
+                    >
+                    <label for="course-reason-1">Reason for Taking:</label>
+                    <input 
+                        type="text" 
+                        id="course-reason-1"
+                        name="courseReason[]" 
+                        value="I am taking this course to improve my web design and coding skills." 
+                        placeholder="Reason" 
+                        required
+                    >
+                </div>
                 <br>
-                <label for="dept">Department: </label>
-                <input type="text" id="dept" value="ITIS" placeholder="Department" required>
-                <label for="num">Number: </label>
-                <input type="number" id="num" value="3135" placeholder="Number" required>
-                <label for="course-name">Course Name: </label>
-                <input type="text" id="course-name" value="Front-End Web App Development" placeholder="Course Name" required>
-                <label for="reason">Reason: </label>
-                <input type="text" id="reason" 
-                value="To learn about the basics of front end development to create useful applications"
-                required>
+                <div id="courses-container">
+                    <div class="course-entry">
+                    <label for="course-department-2">Department:</label>
+                    <input 
+                        type="text" 
+                        id="course-department-2"
+                        name="courseDepartment[]" 
+                        value="ITIS" 
+                        placeholder="Department" 
+                        required
+                    >
+                    <label for="course-number-2">Course Number:</label>
+                    <input 
+                        type="text" 
+                        id="course-number-2"
+                        name="courseNumber[]" 
+                        value="3135" 
+                        placeholder="Course Number" 
+                        required
+                    >
+                    <label for="course-name-2">Course Name:</label>
+                    <input 
+                        type="text" 
+                        id="course-name-2"
+                        name="courseName[]" 
+                        value="Web-Based Application Design and Development" 
+                        placeholder="Course Name" 
+                        required
+                    >
+                    <label for="course-reason-2">Reason for Taking:</label>
+                    <input 
+                        type="text" 
+                        id="course-reason-2"
+                        name="courseReason[]" 
+                        value="I am taking this course to improve my web design and coding skills." 
+                        placeholder="Reason" 
+                        required
+                    >
+                </div>
             </fieldset>
-            <button type="submit">Submit</button>
+            
             <button type="reset">Reset</button>
-            <button type="button">Clear</button>
+            <button type="button" id="clear-button">Clear</button>
+            <button type="submit">Submit</button>
         </form>
     </main>
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.min.js"></script>
     <script>
         document
-        .querySelector("button[type='button']")
+        //.querySelector("button[type='button']")
+        .getElementById("clear-button")
         .addEventListener("click", function (event) {
             const elements = document.querySelectorAll("form input, form textarea");
             Array.from(elements).forEach((element) => {
