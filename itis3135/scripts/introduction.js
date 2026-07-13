@@ -62,3 +62,6 @@ function addCourse() {
 }
 
 document.getElementById("add-course").addEventListener("click",addCourse);
+
+  const formElement = document.getElementById("form");
+  formElement.addEventListener("submit", (e) => e.preventDefault());
