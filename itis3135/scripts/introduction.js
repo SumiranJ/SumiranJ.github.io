@@ -106,10 +106,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
         
         // 2. Insert values into the preview layout
-        document.getElementById('preview-header').textContent = 
+        document.getElementById('preview-heading').textContent = 
             `${firstName} "${nickname}" ${lastName} ${divide} ${mascotAdj} ${mascotAnim}`;
         
+        
+        // Define your fallback image URL (can be a local path or an online placeholder)
+        const DEFAULT_IMAGE_URL = 'images/sj_at_colvard.jpg';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const profileImg = document.getElementById('preview-image');
+            const fileInput = document.getElementById('image-input'); // Your form's file input
+
+            // 1. Set the initial default image on page load
+            profileImg.src = DEFAULT_IMAGE_URL;
+
+            // 2. Safe Fallback: If the user provides a broken URL or upload fails, revert to default
+            profileImg.addEventListener('error', () => {
+                profileImg.src = DEFAULT_IMAGE_URL;
+            });
+
+            // 3. Handle Form Submission or Real-time change
+            fileInput.addEventListener('change', (event) => {
+                const file = event.target.files[0];
+
+                if (file) {
+                    // Read the uploaded file and convert it to a viewable URL string
+                    const reader = new FileReader();
+                    reader.onload = (e) => {
+                        profileImg.src = e.target.result; 
+                    };
+                    reader.readAsDataURL(file);
+                } else {
+                    // If the user clears the file selection, revert back to default
+                    profileImg.src = DEFAULT_IMAGE_URL;
+                }
+            });
+        });
+
+
         document.getElementById('preview-caption').textContent = imgCaption;
+
 
         document.getElementById('preview-statement').textContent = statement;
 
@@ -125,8 +161,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('preview-course1').textContent= course1;
         document.getElementById('preview-course2').textContent= course2;
 
-        document.getElementById('preview-quote').textContent = `"${favQuote}"`
-        document.getElementById('preview-author').textContent = ` - ${quoteAuthor}`
+        document.getElementById('preview-quote').textContent = `"${favQuote}"`;
+        document.getElementById('preview-author').textContent = ` - ${quoteAuthor}`;
         // 3. Toggle visibility to show the introduction page
         formContainer.style.display = 'none';
         previewContainer.style.display = 'block';

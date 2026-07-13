@@ -107,6 +107,12 @@ input[type="text"], input[type="email"],input[type="number"], select, textarea {
   display:none;
 }
 
+#preview-image{
+  width:187px;
+  height:249px;
+  object-fit:cover;
+}
+
 .input-width{
     width:100%;
     box-sizing:border-box;
