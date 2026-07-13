@@ -15,7 +15,7 @@
     <div data-include="components/header.html"></div>
     <main class="container">
         <h2>Introduction Form</h2>
-        <p>Please submit the form below</p>
+        <h3>Please submit the form below</h3>
         <form id="intro-form">
             <fieldset>
                 <legend>Personal Information</legend>
@@ -209,7 +209,7 @@
             });
         });
 
-        
+
         courseCount=1;
         coursesContainer=document.getElementById("courses-container");
 
@@ -225,7 +225,7 @@
                 name="courseDepartment[]" 
                 placeholder="Department" 
                 required
-            >
+            ><br>
             <label for="course-number-${courseCount}">Course Number:</label>
             <input 
                 type="text" 
@@ -233,7 +233,7 @@
                 name="courseNumber[]" 
                 placeholder="Course Number" 
                 required
-            >
+            ><br>
             <label for="course-name-${courseCount}">Course Name:</label>
             <input 
                 type="text" 
@@ -241,7 +241,7 @@
                 name="courseName[]" 
                 placeholder="Course Name" 
                 required
-            >
+            ><br>
             <label for="course-reason-${courseCount}">Reason for Taking:</label>
             <input 
                 type="text" 
