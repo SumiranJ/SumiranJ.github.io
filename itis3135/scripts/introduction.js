@@ -12,7 +12,7 @@ document
 });
 
 
-courseCount=1;
+courseCount=2;
 coursesContainer=document.getElementById("courses-container");
 
 function addCourse() { 
