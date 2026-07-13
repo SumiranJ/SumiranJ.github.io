@@ -13,7 +13,7 @@
 </head>
 <body>
     <div data-include="components/header.html"></div>
-    <main class="container">
+    <main id="container">
         <h2>Introduction Form</h2>
         <h3>Please submit the form below</h3>
         <form id="intro-form">
@@ -246,8 +246,35 @@
             <button type="submit">Submit</button>
         </form>
     </main>
+
+    <div id="preview-container">
+        <h2>Introduction</h2>
+        <h3 id="preview-heading"></h3>
+        <figure>
+            <img id="preview-image">
+            <figcaption id="preview-caption"><i></i></figcaption>
+        </figure>
+        <p id="preview-statement"></p>
+        <ul>
+            <li id="preview-personal"></li>
+            <li id="preview-professional"></li>
+            <li id="preview-academic"></li>
+            <li id="preview-computer"></li>
+            <li><strong>Courses I’m Taking, & Why</strong>:
+                <ul>
+                    <li id="preview-course1"></li>
+                    <li id="preview-course2"></li>
+                </ul>
+            </li>
+        </ul>
+        <p id="preview-quote"></p>
+        <p class="preview-author"></p>
+
+        <button id="reset-btn">Reset / Edit Form</button>
+    </div>
     <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.min.js"></script>
     <script src="scripts/introduction.js"></script>
+    <script src="https://divonbriesen.github.io/web123/scripts/standards-check.js" defer></script>
 </body>
 </html>
