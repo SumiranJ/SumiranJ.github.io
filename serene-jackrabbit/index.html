@@ -39,7 +39,7 @@
     
     <div data-include="components/header.html"></div>
     <main>
-        <section id="home">
+        <section id="home" class="active">
             <h2>Serene Jackrabbit Physical Wellness Center</h2>
             <p>Welcome to the Business</p>
         </section>
@@ -62,6 +62,38 @@
         
     </main>
     <div data-include="components/footer.html"></div>
+    <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            const links = document.querySelectorAll("nav a");
+            const sections = document.querySelectorAll("section");
+
+            links.forEach((link) => {
+                link.addEventListener("click", (event) => {
+
+                event.preventDefault(); 
+
+
+                links.forEach((l) => l.classList.remove("active"));
+                sections.forEach((s) => s.classList.remove("active"));
+
+
+                link.classList.add("active");
+
+                
+                const targetId = link.getAttribute("data-target");
+                const targetSection = document.getElementById(targetId);
+                
+                if (targetSection) {
+                    targetSection.classList.add("active");
+                }
+                });
+            });
+            });
+
+        </script>
+    <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="https://divonbriesen.github.io/web123/scripts/standards-check.js" defer></script>
+
 </body>
 </html>
