@@ -175,3 +175,43 @@ document.addEventListener('DOMContentLoaded', () => {
         formContainer.style.display = 'block';
     });
 });
+
+ function getFormData() {
+    const form = document.getElementById('intro-form');
+    const formData = new FormData(form);
+    const data = {};
+    formData.forEach((value, key) => {
+        data[key] = value;
+    });
+    return data;
+}
+
+function generateHTML() {
+    const data = getFormData();
+    let htmlString = "<ul>\n";
+    for (const [key, value] of Object.entries(data)) {
+        htmlString += `  <li><strong>${key}:</strong> ${value}</li>\n`;
+    }
+    htmlString += "</ul>";
+    
+    document.getElementById('outputArea').value = htmlString;
+}
+
+function generateJSON() {
+    const data = getFormData();
+    // The parameters (null, 4) pretty-print the JSON with 4 spaces of indentation
+    const jsonString = JSON.stringify(data, null, 4);
+    
+    document.getElementById('outputArea').value = jsonString;
+}
+
+function generateXML() {
+    const data = getFormData();
+    let xmlString = '<?xml version="1.0" encoding="UTF-8"?>\n<form_data>\n';
+    for (const [key, value] of Object.entries(data)) {
+        xmlString += `    <${key}>${value}</${key}>\n`;
+    }
+    xmlString += '</form_data>';
+    
+    document.getElementById('outputArea').value = xmlString;
+}
