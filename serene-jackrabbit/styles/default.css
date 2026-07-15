@@ -27,14 +27,8 @@ main{
     margin:10px;
 }
 
-#tagline{
-    text-align: center;
-}
-
-footer p{
-    text-align: center;
-}
-
+#tagline,
+footer p,
 header nav{
     text-align: center;
 }
