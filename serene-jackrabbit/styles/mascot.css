@@ -1,0 +1,28 @@
+body, header, footer{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align:center;
+    background-color:#003049;
+}
+
+h1, h2, h3{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#f77f00;
+}
+
+p, ul, ol, li, nav, blockquote{
+    color:#eae2b7;
+    text-align:left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a, a:visited{
+    color:#fcbf49;
+}
+
+main{
+    border: 2px solid #d62828;
+    padding:10px;
+    border-radius: 10px;
+    margin:10px;
+}
