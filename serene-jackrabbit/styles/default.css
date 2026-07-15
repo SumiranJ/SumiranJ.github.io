@@ -26,3 +26,11 @@ main{
     border-radius: 10px;
     margin:10px;
 }
+
+#tagline{
+    text-align: center;
+}
+
+footer p{
+    text-align: center;
+}
