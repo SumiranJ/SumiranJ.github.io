@@ -179,6 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
  function getFormData() {
     const form = document.getElementById('intro-form');
     const formData = new FormData(form);
+    console.log("formData::::::::",formData);
     const data = {};
     formData.forEach((value, key) => {
         data[key] = value;

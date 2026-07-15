@@ -20,45 +20,45 @@
             <fieldset>
                 <legend>Personal Information</legend>
                 <label for="first-name">First Name</label>
-                <input type="text" id="first-name" value="Sumiran" placeholder="Enter your first name" required>
+                <input type="text" id="first-name" name="First Name" value="Sumiran" placeholder="Enter your first name" required>
                 <br>
                 <label for="middle-name">Middle Name/Initial (optional)</label>
-                <input type="text" id="middle-name" value="" placeholder="Enter middle name if applicable">
+                <input type="text" id="middle-name" name="Middle Name" value="" placeholder="Enter middle name if applicable">
                 <br>
                 <label for="nickname">Nickname (optional)</label>
-                <input type="text" id="nickname" value="&quot;Sum&quot;" placeholder="Enter nickname if applicable">
+                <input type="text" id="nickname"name="Nickname" value="&quot;Sum&quot;" placeholder="Enter nickname if applicable">
                 <br>
                 <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" value="Juthuga" placeholder="Enter your last name" required>
+                <input type="text" id="last-name" name="Last Name" value="Juthuga" placeholder="Enter your last name" required>
                 <br>
             </fieldset>
 
             <fieldset>
                 <legend>Mascot Information</legend>
                 <label for="mascot-adj">Mascot Adjective</label>
-                <input type="text" id="mascot-adj" value="Serene" placeholder="Enter the adjective" required>
+                <input type="text" id="mascot-adj" name="Mascot Adjective" value="Serene" placeholder="Enter the adjective" required>
                 <br>
                 <label for="mascot-animal">Mascot Animal</label>
-                <input type="text" id="mascot-animal" value="Jackrabbit" placeholder="Enter the animal" required>
+                <input type="text" id="mascot-animal" name="Mascot Anmial" value="Jackrabbit" placeholder="Enter the animal" required>
                 <br>
                 <label for="divider">Divider</label>
-                <input type="text" id="divider" value="|" placeholder="" required>
+                <input type="text" id="divider" name="Divider" value="|" placeholder="" required>
             </fieldset>
 
             <fieldset>
                 <legend>Picture</legend>
                 <label for="picture">Picture: </label>
-                <input type="file" id="picture" accept="image/*">
+                <input type="file" name="picture" id="picture" accept="image/*">
                 <br>
                 <label for="picture-caption">Picture Caption: </label>
-                <input type="text" id="picture-caption" value="At the Colvard building" required>
+                <input type="text" name="picture-caption" id="picture-caption" value="At the Colvard building" required>
             </fieldset>
 
             <fieldset>
                 <legend>Personal Details</legend>
                 <label for="personal-statement">Personal Statement</label>
                 <br>
-                <textarea id="personal-statement" rows="4" cols="30" class="input-width" placeholder="Introduce yourself..." required>
+                <textarea id="personal-statement" name = "Personal Statement" rows="4" cols="30" class="input-width" placeholder="Introduce yourself..." required>
                     This is Sumiran Juthuga, a Computer Science senior studying with a concentration in Cybersecurity. 
                     I am taking summer courses at UNC Charlotte for the second semester, and I am excited to dive into 
                     practicing front-end development. I am interested in learning about the uses of the 
@@ -67,27 +67,27 @@
                 <br>
                 <label for="personal-background">Personal Background</label>
                 <br>
-                <textarea id="personal-background" rows="4" cols="20" class="input-width" placeholder="Details about your background" required>
+                <textarea id="personal-background" name="Personal Background" rows="4" cols="20" class="input-width" placeholder="Details about your background" required>
                     I am originally from Atlanta, and I moved to Charlotte when I was in high school. 
                     I like to take walks, explore new places and read books in my free time.
                 </textarea>
                 <br>
                 <label for="professional-background">Professional Background</label>
                 <br>
-                <textarea id="professional-background" rows="4" cols="20" class="input-width" placeholder="Details about professional experience" required>
+                <textarea id="professional-background" name="Professional Background" rows="4" cols="20" class="input-width" placeholder="Details about professional experience" required>
                     I have worked in an internship that involves technology and marketing.
                 </textarea>
                 <br>
                 <label for="academic-background">Academic Background</label>
                 <br>
-                <textarea id="academic-background" rows="4" cols="20" class="input-width" placeholder="Details about academic background" required>
+                <textarea id="academic-background" name="Academic Background" rows="4" cols="20" class="input-width" placeholder="Details about academic background" required>
                     I am studying computer science with a concentration in cyber security. 
                     I plan to advance my knowledge through applying for internships that are related to blue team roles.
                 </textarea>
                 <br>
                 <label for="primary-computer">Primary Computer</label>
                 <br>
-                <textarea id="primary-computer" rows="4" cols="20" class="input-width" placeholder="Computer being used" required>
+                <textarea id="primary-computer" name="Primary Computer" rows="4" cols="20" class="input-width" placeholder="Computer being used" required>
                     HP, Windows 11 Home, AMD Ryzer laptop
                 </textarea>
             </fieldset>
@@ -99,7 +99,7 @@
                         <input 
                             type="text" 
                             id="course-department-1"
-                            name="courseDepartment[]" 
+                            name="courseDepartment1" 
                             value="ITSC" 
                             placeholder="Department" 
                             required
@@ -108,7 +108,7 @@
                         <input 
                             type="text" 
                             id="course-number-1"
-                            name="courseNumber[]" 
+                            name="courseNumber1" 
                             value="3146" 
                             placeholder="Course Number" 
                             required
@@ -117,7 +117,7 @@
                         <input 
                             type="text" 
                             id="course-name-1"
-                            name="courseName[]" 
+                            name="courseName1" 
                             value="Intro to Operating Systems & Networks" 
                             placeholder="Course Name" 
                             required
@@ -126,7 +126,7 @@
                         <input 
                             type="text" 
                             id="course-reason-1"
-                            name="courseReason[]" 
+                            name="courseReason1" 
                             value="For learning about the fundamentals of operating systems & the types of networking, so that I would be able to write efficient logic when coding" 
                             placeholder="Reason" 
                             required
@@ -138,7 +138,7 @@
                         <input 
                             type="text" 
                             id="course-department-2"
-                            name="courseDepartment[]" 
+                            name="courseDepartment2" 
                             value="ITIS"
                             placeholder="Department" 
                             required
@@ -147,7 +147,7 @@
                         <input 
                             type="text" 
                             id="course-number-2"
-                            name="courseNumber[]" 
+                            name="courseNumber2" 
                             value="3135"
                             placeholder="Course Number" 
                             required
@@ -156,7 +156,7 @@
                         <input 
                             type="text" 
                             id="course-name-2"
-                            name="courseName[]" 
+                            name="courseName2" 
                             value="Front-End Web App Development"
                             placeholder="Course Name" 
                             required
@@ -165,7 +165,7 @@
                         <input 
                             type="text" 
                             id="course-reason-2"
-                            name="courseReason[]" 
+                            name="courseReason2" 
                             value="To learn about the basics of front end development to create useful applications"
                             placeholder="Reason" 
                             required
@@ -173,77 +173,77 @@
                     </div>
                 </div>
                 <hr/>
-                <input type="button" id="add-course" value="Add Course"/>
+                <input type="button" name="Add Course" id="add-course" value="Add Course"/>
             </fieldset>
             <fieldset>
                 <legend>Favorite Quote and Other Details</legend>
                 <label for="quote">Quote</label>
-                <input id="quote" type="text" value="Success is the sum of small efforts, repeated day-in and day-out." required><br>
+                <input id="quote" name="Quote" type="text" value="Success is the sum of small efforts, repeated day-in and day-out." required><br>
                 <label for="author">Quote Author</label>
-                <input id="author" type="text" value="Robert Collier" required><br>
+                <input id="author" name="Author" type="text" value="Robert Collier" required><br>
                 <label for="funny-thing">Funny Thing</label>
-                <textarea id="funny-thing" rows="2" cols="10" class="input-width" placeholder="Any funny thing about you want to share (optional)"></textarea><br>
+                <textarea id="funny-thing" name="Funny Thing" rows="2" cols="10" class="input-width" placeholder="Any funny thing about you want to share (optional)"></textarea><br>
                 <label for="other">Something I would like to share</label>
-                <textarea id="other" rows="2" cols="10" class="input-width" placeholder="Include any other details you want to share (optional)"></textarea>
+                <textarea id="other" name="Other" rows="2" cols="10" class="input-width" placeholder="Include any other details you want to share (optional)"></textarea>
             </fieldset>
             
             <fieldset>
                 <legend>Links</legend>
                 <label for="link-1-name">Link 1 Name</label>
-                <input type="text" id="link-1-name" value="CLT Web" placeholder="link name" required><br>
+                <input type="text" id="link-1-name" name="l1-name" value="CLT Web" placeholder="link name" required><br>
                 <label for="link-1-url">Link 1 URL</label>
-                <input type="text" id="link-1-url" value="https://webpages.charlotte.edu/sjuthuga/" placeholder="link url" required>
+                <input type="text" id="link-1-url" name="l1-url" value="https://webpages.charlotte.edu/sjuthuga/" placeholder="link url" required>
                 <hr>
                 <label for="link-2-name">Link 2 Name</label>
-                <input type="text" id="link-2-name" value="Github.io" placeholder="link name" required><br>
+                <input type="text" id="link-2-name" name="l2-name" value="Github.io" placeholder="link name" required><br>
                 <label for="link-2-url">Link 2 URL</label>
-                <input type="text" id="link-2-url" value="https://github.com/SumiranJ/SumiranJ.github.io" placeholder="link url" required>
+                <input type="text" id="link-2-url" name="l2-url" value="https://github.com/SumiranJ/SumiranJ.github.io" placeholder="link url" required>
                 <hr>
                 <label for="link-3-name">Link 3 Name</label>
-                <input type="text" id="link-3-name" value="Github" placeholder="link name" required><br>
+                <input type="text" id="link-3-name" name="l3-name" value="Github" placeholder="link name" required><br>
                 <label for="link-3-url">Link 3 URL</label>
-                <input type="text" id="link-3-url" value="https://github.com/SumiranJ/" placeholder="link url" required>
+                <input type="text" id="link-3-url" name="l3-url" value="https://github.com/SumiranJ/" placeholder="link url" required>
                 <hr>
                 <label for="link-4-name">Link 4 Name</label>
-                <input type="text" id="link-4-name" value="freeCodeCamp" placeholder="link name" required><br>
+                <input type="text" id="link-4-name" name="l4-name" value="freeCodeCamp" placeholder="link name" required><br>
                 <label for="link-4-url">Link 4 URL</label>
-                <input type="text" id="link-4-url" value="https://www.freecodecamp.org/sumiranj" placeholder="link url" required>
+                <input type="text" id="link-4-url" name="l4-url" value="https://www.freecodecamp.org/sumiranj" placeholder="link url" required>
                 <hr>
                 <label for="link-5-name">Link 5 Name</label>
-                <input type="text" id="link-5-name" value="Codecademy" placeholder="link name" required><br>
+                <input type="text" id="link-5-name" name="l5-name" value="Codecademy" placeholder="link name" required><br>
                 <label for="link-5-url">Link 5 URL</label>
-                <input type="text" id="link-5-url" value="https://www.codecademy.com/profiles/sumiran_juthuga" placeholder="link url" required>
+                <input type="text" id="link-5-url" name="l5-url" value="https://www.codecademy.com/profiles/sumiran_juthuga" placeholder="link url" required>
                 <hr>
                 <label for="link-6-name">Link 6 Name</label>
-                <input type="text" id="link-6-name" value="LinkedIn" placeholder="link name" required><br>
+                <input type="text" id="link-6-name" name="l6-name" value="LinkedIn" placeholder="link name" required><br>
                 <label for="link-6-url">Link 6 URL</label>
-                <input type="text" id="link-6-url" value="https://www.linkedin.com/in/sumiran-juthuga-165848327/" placeholder="link url" required>
+                <input type="text" id="link-6-url" name="l6-url" value="https://www.linkedin.com/in/sumiran-juthuga-165848327/" placeholder="link url" required>
             </fieldset>
 
             <fieldset>
                 <legend>Acknowledgement</legend>
                 <label for="ack-statement">Acknowledgement Statement</label>
-                <textarea id="ack-statement" rows="1" cols="10" placeholder="Acknowledgement Statement" class="input-width" required>
+                <textarea id="ack-statement" name="Acknowledgement" rows="1" cols="10" placeholder="Acknowledgement Statement" class="input-width" required>
                     I understand that what I put here is publicly available on the web, and I won’t put anything that I don’t want the public to see.
                 </textarea>
                 <br>
                 <label for="ack-date">Acknowledgement Date</label>
-                <input type="text" id="ack-date" value="05/19/2026" placeholder="date (MM/DD/YYYY)">
+                <input type="text" id="ack-date" name="Date" value="05/19/2026" placeholder="date (MM/DD/YYYY)">
             </fieldset>
 
-            <button type="reset">Reset</button>
-            <button type="button" id="clear-button">Clear</button>
-            <button type="submit">Submit</button>
+            <button type="reset" name="reset">Reset</button>
+            <button type="button" id="clear-button" name="clear-button">Clear</button>
+            <button type="submit" name="submit">Submit</button>
             <br>
             
         </form>
         <div class="button-group">
-                <button type="button" onclick="generateHTML()">Generate HTML</button>
-                <button type="button" onclick="generateJSON()">Generate JSON</button>
-                <button type="button" onclick="generateXML()">Generate XML</button>
+                <button type="button" name="generatehtml" onclick="generateHTML()">Generate HTML</button>
+                <button type="button" name="generatejson" onclick="generateJSON()">Generate JSON</button>
+                <button type="button" name="generatexml" onclick="generateXML()">Generate XML</button>
         </div>
         <h3>Raw Code Output:</h3>
-        <textarea id="outputArea" rows="10" cols="20" readonly placeholder="Your generated code will appear here..."></textarea>
+        <textarea id="outputArea" name="Output Area" rows="10" cols="20" readonly placeholder="Your generated code will appear here..."></textarea>
     </main>
 
     <div id="preview-container">
