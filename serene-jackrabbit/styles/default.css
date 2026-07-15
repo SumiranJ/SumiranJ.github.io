@@ -3,6 +3,7 @@ body, header, footer{
     margin: 0 auto;
     text-align:center;
     background-color:#003049;
+    font-size:20px;
 }
 
 h1, h2, h3{
