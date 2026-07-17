@@ -177,7 +177,7 @@ textarea.form-control {
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    text-align: left;
+    /* text-align: left; */
 }
 
 .kit-card {
