@@ -64,16 +64,21 @@
         const panelBody = document.querySelector("#rec-par");
 
         // 3. Execution Controller
+        // Alternative high-compatibility script engine trigger
         paceSlider.addEventListener("input", (e) => {
             const currentConfig = viewStates[e.target.value];
             
-            // Adjust the CSS object alignment matrix seamlessly 
-            cropTarget.style.objectPosition = currentConfig.cropPosition;
+            // Uses structural translations instead of position properties
+            if(e.target.value === "1") {
+                cropTarget.style.transform = "translateX(0px)";
+            } else {
+                cropTarget.style.transform = "translateX(-162px)"; /* Slides exactly half out of view */
+            }
             
-            // Rewrite panel strings dynamically
             panelHeading.textContent = currentConfig.kitTitle;
             panelBody.textContent = currentConfig.kitDesc;
         });
+
     </script>
 
 
