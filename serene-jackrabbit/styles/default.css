@@ -11,7 +11,7 @@ h1, h2, h3{
     color:#f77f00;
 }
 
-p, ul, ol, li, nav, blockquote{
+p, ul, ol, li, nav, blockquote, label{
     color:#eae2b7;
     text-align:left;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
