@@ -46,12 +46,12 @@
         // 1. Establish data maps mapping slider inputs to custom recommendations and crop rules
         const viewStates = {
             1: {
-                cropPosition: "right center", // Focuses on Left Side (Exercising)
+                cropPosition: "left center", // Focuses on Left Side (Exercising)
                 kitTitle: "💙 Recommended: The Restore Kit",
                 kitDesc: "Perfect for draining anxiety or physical crashing. Rest comfortably using our posture-correcting cork rollers, standing acupressure foot mats, and soothing lavender eye pillows."
             },
             2: {
-                cropPosition: "left center", // Shifts window to Right Side (Relaxing)
+                cropPosition: "right center", // Shifts window to Right Side (Relaxing)
                 kitTitle: "🧡 Recommended: The Release Kit",
                 kitDesc: "Perfect for handling high energy! Tap into athletic conditioning with our matte-black high-speed agility ropes and tactical weights to vent stress constructively."
             }
@@ -72,7 +72,7 @@
             if (e.target.value === "1") {
                 cropTarget.style.transform = "translateX(0px)";
             } else {
-                cropTarget.style.transform = "translateX(-162px)"; /* Slides exactly half out of view */
+                cropTarget.style.transform = "translateX(162px)"; /* Slides exactly half out of view */
             }
             
             panelHeading.textContent = currentConfig.kitTitle;
