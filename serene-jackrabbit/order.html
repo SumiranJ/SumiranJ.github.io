@@ -55,9 +55,9 @@
         };
 
         const locationButtons = document.querySelectorAll(".loc-btn");
-		const addressDisplay = document.getElementById("storeAddressDisplay");locationButtons.forEach(button => {button.addEventListener("click", (e) => {
+		const addressDisplay = document.getElementById("storeAddressDisplay");locationButtons.forEach((button) => {button.addEventListener("click", (e) => {
         // Clear out active visibility state indicators across grouplocation
-        Buttons.forEach(btn => btn.classList.remove("active"));// Activate the targeted event button target
+        Buttons.forEach((btn) => btn.classList.remove("active"));// Activate the targeted event button target
         e.target.classList.add("active");
         // Fetch dictionary matrix definition context strings and write
         const targetKey = e.target.getAttribute("data-loc");addressDisplay.innerHTML = STORE_DATA[targetKey];});});
