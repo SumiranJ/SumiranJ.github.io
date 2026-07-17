@@ -18,9 +18,21 @@
     <main>
         <h2>Order</h2>
         <p>
-            You can order these products online or purchase them at a store in-person. We have locations in the North 
+            You can order these products online or purchase them at a store in-person. We have locations in the North, Uptown, 
             and South Charlotte regions.
         </p>
+        <div class="location-selector">
+            <div class="location-btn-group">
+                <button type="button" class="active" data-loc="north">North Charlotte Hub</button>
+                <button type="button" data-loc="uptown">Uptown Charlotte Hub</button>
+                <button type="button" data-loc="south">South Charlotte Hub</button>
+            </div>
+            <div class="location-display-box" id="storeAddressDisplay">
+                📍 <strong>Address:</strong> 9801 University City Blvd, Charlotte, NC 28223<br>
+                🕒 <strong>Hours:</strong> Mon - Sat: 9:00 AM - 6:00 PM | Sun: Closed<br>
+                📞 <strong>Phone:</strong> (704) 555-0190
+            </div>
+        </div>
         <p>
             You can purchase these products as a collective kit, or purchase individual items based on your preferences.
         </p>
@@ -28,6 +40,28 @@
             with your fitness goals, we offer a <em>30 day money back guarantee</em>.
         </p>
     </main>
+    <script>
+        // ===  LOCATION SELECTOR CONTROLLER LOGIC ===
+        const STORE_DATA = {
+            north: `📍 <strong>Address:</strong> 9801 University City Blvd, Charlotte, NC 28223<br>
+                    🕒 <strong>Hours:</strong> Mon - Sat: 9:00 AM - 6:00 PM | Sun: Closed<br>
+                    📞 <strong>Phone:</strong> (704) 555-0190`,
+            uptown: `📍 <strong>Address:</strong> 8020 Springwood Ln, Charlotte, NC, 20285<br>
+                    🕒 <strong>Hours:</strong> Mon - Sat: 10:00 AM - 10:00 PM | Sun: 11:00 AM - 7:00 PM<br>
+                    📞 <strong>Phone:</strong> (704) 326-2683`,
+            south: `📍 <strong>Address:</strong> 4400 Sharon Rd, Charlotte, NC 28211<br>
+                    🕒 <strong>Hours:</strong> Mon - Sat: 10:00 AM - 8:00 PM | Sun: 12:00 PM - 6:00 PM<br>
+                    📞 <strong>Phone:</strong> (704) 555-0143`
+        };
+
+        const locationButtons = document.querySelectorAll(".loc-btn");
+		const addressDisplay = document.getElementById("storeAddressDisplay");locationButtons.forEach(button => {button.addEventListener("click", (e) => {
+        // Clear out active visibility state indicators across grouplocation
+        Buttons.forEach(btn => btn.classList.remove("active"));// Activate the targeted event button target
+        e.target.classList.add("active");
+        // Fetch dictionary matrix definition context strings and write
+        const targetKey = e.target.getAttribute("data-loc");addressDisplay.innerHTML = STORE_DATA[targetKey];});});
+        </script>
     <div data-include="components/footer.html"></div>
     <script src="../itis3135/scripts/HTMLInclude.min.js"></script>
     <script src="https://divonbriesen.github.io/web123/scripts/standards-check.js" defer></script>
