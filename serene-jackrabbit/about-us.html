@@ -27,16 +27,16 @@
         <div class="image-window">
             <img id="mascotImage" src="../itis3135/images/exercising_resting.webp" alt="jackrabbits shown exercising and relaxing" height="178" width="324">
         </div>
-
+        <h3>How Energetic Are You (in a week)?</h3>
         <div class="tracker-box">
-            <label for="aboutPaceInput">🔄 Adjust to scan our active/rest methods:</label>
+            <label for="aboutPaceInput">Low                 High</label>
             <input type="range" id="aboutPaceInput" class="pace-slider" min="1" max="2" value="1">
         </div>
 
         <!-- DYNAMIC RECOMMENDATION TARGET REGION -->
         <div id="kitRecommendation" class="recommendation-panel">
-            <h3 id="rec-heading">🧡 Recommended: The Release Kit</h3>
-            <p id="rec-par">Perfect for handling high energy! Tap into athletic conditioning with our matte-black high-speed agility ropes and tactical weights to vent stress constructively.</p>
+            <h3 id="rec-heading">💙 Recommended: The Restore Kit</h3>
+            <p id="rec-par">Perfect for draining anxiety or physical crashing. Rest comfortably using our posture-correcting cork rollers, standing acupressure foot mats, and soothing lavender eye pillows.</p>
         </div>
         
     </main>
@@ -47,13 +47,13 @@
         const viewStates = {
             1: {
                 cropPosition: "left center", // Focuses on Left Side (Exercising)
-                kitTitle: "🧡 Recommended: The Release Kit",
-                kitDesc: "Perfect for handling high energy! Tap into athletic conditioning with our matte-black high-speed agility ropes and tactical weights to vent stress constructively."
+                kitTitle: "💙 Recommended: The Restore Kit",
+                kitDesc: "Perfect for draining anxiety or physical crashing. Rest comfortably using our posture-correcting cork rollers, standing acupressure foot mats, and soothing lavender eye pillows."
             },
             2: {
                 cropPosition: "right center", // Shifts window to Right Side (Relaxing)
-                kitTitle: "💙 Recommended: The Restore Kit",
-                kitDesc: "Perfect for draining anxiety or physical crashing. Rest comfortably using our posture-correcting cork rollers, standing acupressure foot mats, and soothing lavender eye pillows."
+                kitTitle: "🧡 Recommended: The Release Kit",
+                kitDesc: "Perfect for handling high energy! Tap into athletic conditioning with our matte-black high-speed agility ropes and tactical weights to vent stress constructively."
             }
         };
 
