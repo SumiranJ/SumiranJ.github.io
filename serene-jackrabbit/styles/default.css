@@ -113,7 +113,7 @@ header nav{
 /* Class added via JS to create a gentle error shake animation */
 .shake-error {
     animation: shake 0.3s ease-in-out;
-    border-color: #d62828 !important;
+    border-color: #d62828;
 }
 
 @keyframes shake {

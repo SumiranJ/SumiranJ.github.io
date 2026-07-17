@@ -78,10 +78,10 @@
 
             // Clear operational error histories safely on click trigger
             let formIsValid = true;
-            [inputName, inputEmail, inputMessage].forEach(field => {
+            [inputName, inputEmail, inputMessage].forEach((field) => {
                 field.classList.remove("shake-error");
             });
-            [alertName, alertEmail, alertMessage].forEach(alertDiv => {
+            [alertName, alertEmail, alertMessage].forEach((alertDiv) => {
                 alertDiv.style.display = "none";
             });
 
