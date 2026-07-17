@@ -101,6 +101,7 @@ header nav{
     color: #eae2b7;
 }
 
+/* --- JAVASCRIPT ANIMATED FEEDBACK ELEMENT --- */
 .validation-alert {
     color: #ff4a4a;
     font-size: 0.85rem;
@@ -113,7 +114,7 @@ header nav{
 /* Class added via JS to create a gentle error shake animation */
 .shake-error {
     animation: shake 0.3s ease-in-out;
-    border-color: #d62828;
+    border-color: #d62828 !important;
 }
 
 @keyframes shake {
