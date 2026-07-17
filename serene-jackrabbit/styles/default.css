@@ -176,9 +176,8 @@ textarea.form-control {
 
 .products-grid {
     display: grid;
-    /* Creates columns that wrap beautifully down to a new row on mobile screens */
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    margin: 25px 0;
+    margin: 25px;
     text-align: left;
 }
 
