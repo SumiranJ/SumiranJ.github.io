@@ -178,7 +178,6 @@ textarea.form-control {
     display: grid;
     /* Creates columns that wrap beautifully down to a new row on mobile screens */
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 20px;
     margin: 25px 0;
     text-align: left;
 }
@@ -194,9 +193,9 @@ textarea.form-control {
 }
 
 /* Unique accents for each card to highlight purpose */
-.kit-card.catalyst { border-top: 4px solid #4BB543; } /* Rest/Calm Green */
-.kit-card.release { border-top: 4px solid #f77f00; }  /* Exercise Orange */
-.kit-card.restore { border-top: 4px solid #00E5FF; }  /* Energy Recovery Cyan */
+#catalyst { border-top: 4px solid #4BB543; } /* Rest/Calm Green */
+#release { border-top: 4px solid #f77f00; }  /* Exercise Orange */
+#restore { border-top: 4px solid #00E5FF; }  /* Energy Recovery Cyan */
 
 .kit-heading {
     font-size: 1.15rem;
