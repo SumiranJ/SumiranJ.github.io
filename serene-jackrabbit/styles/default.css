@@ -45,7 +45,8 @@ header nav{
 
 .image-window img {
     display: block;
-    height: 100%;
+    /* height: 100%; */
+    height:178px;
     width: 324px; /* Keeps natural dimension asset ratio */
     min-width:324px;
     object-fit: cover;
