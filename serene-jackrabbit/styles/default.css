@@ -100,3 +100,24 @@ header nav{
     font-size: 0.95rem;
     color: #eae2b7;
 }
+
+.validation-alert {
+    color: #ff4a4a;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-top: 4px;
+    display: none;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* Class added via JS to create a gentle error shake animation */
+.shake-error {
+    animation: shake 0.3s ease-in-out;
+    border-color: #d62828 !important;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-6px); }
+    40%, 80% { transform: translateX(6px); }
+}

@@ -3,7 +3,7 @@
 <html lang = "en">
 
 <head>
-    <title>Serene Jackrabbit Physical Wellness | Contact</title>
+    <title>Serene Jackrabbit Physical Wellness | Contact Us</title>
     <link rel="icon" type="image/png" href="../itis3135/images/serene_jackrabbit_logo.png">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,11 +13,107 @@
 <body>
     <div data-include="components/header.html"></div>
     <main>
-        <h2>Contact</h2>
-        <p>You can contact us through...</p>
+        <h2>Contact Us</h2>
+        <p>
+            Invite the community, corporate wellness coordinators, and physical trainers to get in touch with our team. 
+            Whether you need bulk corporate pricing configurations for your remote workforce or require immediate technical 
+            assistance sizing your agility rope mechanisms, a human representative will hop to it quickly.
+        </p>
+        <h3>Contact Information</h3>
+        <ul>
+            <li>Physical Address: <em>8020 Springwood Ln, Charlotte, NC, 20285</em></li>
+            <li>Email: <em>help@serene-jackrabbit.com</em></li>
+        </ul>
+        <p>Our main digital communication desk tracks inquiries throughout the day. While our physical jackrabbit operations move at 
+            lightning speeds, our client support specialists take the time to thoroughly and serenely handle every 
+            individual request with absolute care.</p>
+        <p>If you have any inquiries about anything related to the products, please contact us through this Inquiry 
+            Form below.</p>
+        
+        <form class="contact-form" id="contactPortal" novalidate>
+            <!-- Field 1: Customer Name -->
+            <div class="form-group">
+                <label for="clientName">👤 Full Name</label>
+                <input type="text" id="clientName" class="form-control" placeholder="Jane Doe">
+                <div class="validation-alert" id="nameAlert">Please tell us your name so we know who to address.</div>
+            </div>
+
+            <!-- Field 2: Customer Electronic Mail -->
+            <div class="form-group">
+                <label for="clientEmail">✉️ Email Address</label>
+                <input type="email" id="clientEmail" class="form-control" placeholder="jane@example.com">
+                <div class="validation-alert" id="emailAlert">Please provide a valid email address so we can route your response.</div>
+            </div>
+
+            <!-- Field 3: Structured Context Message -->
+            <div class="form-group">
+                <label for="clientMessage">💬 Your Inquiry</label>
+                <textarea id="clientMessage" class="form-control" placeholder="How can our wellness systems assist your routine?"></textarea>
+                <div class="validation-alert" id="messageAlert">Your message content cannot be left blank.</div>
+            </div>
+
+            <button type="submit" class="submit-btn" id="sendInquiryBtn">Send Message</button>
+        </form>
+
     </main>
     <div data-include="components/footer.html"></div>
-    <!-- <script src="scripts/HTMLInclude.min.js"></script> -->
+    <script>
+        // 1. Hook Form Nodes
+        const contactForm = document.getElementById("contactPortal");
+        const inputName = document.getElementById("clientName");
+        const inputEmail = document.getElementById("clientEmail");
+        const inputMessage = document.getElementById("clientMessage");
+
+        const alertName = document.getElementById("nameAlert");
+        const alertEmail = document.getElementById("emailAlert");
+        const alertMessage = document.getElementById("messageAlert");
+
+        // Helper regex matching configuration string structural logic
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        // 2. Intercept submit execution pathway
+        contactForm.addEventListener("submit", (event) => {
+            // Halt native page reloads
+            event.preventDefault();
+
+            // Clear operational error histories safely on click trigger
+            let formIsValid = true;
+            [inputName, inputEmail, inputMessage].forEach(field => {
+                field.classList.remove("shake-error");
+            });
+            [alertName, alertEmail, alertMessage].forEach(alertDiv => {
+                alertDiv.style.display = "none";
+            });
+
+            // 3. Sequential Conditional Boundary Checking
+            // Validate Name
+            if (inputName.value.trim() === "") {
+                inputName.classList.add("shake-error");
+                alertName.style.display = "block";
+                formIsValid = false;
+            }
+
+            // Validate Email structure string matrix
+            if (!emailPattern.test(inputEmail.value.trim())) {
+                inputEmail.classList.add("shake-error");
+                alertEmail.style.display = "block";
+                formIsValid = false;
+            }
+
+            // Validate Textarea Input Box
+            if (inputMessage.value.trim() === "") {
+                inputMessage.classList.add("shake-error");
+                alertMessage.style.display = "block";
+                formIsValid = false;
+            }
+
+            // 4. Submission Response Route Execution
+            if (formIsValid) {
+                alert(`Message processed! Thank you, ${inputName.value.trim()}. Our team has logged your inquiry and will hop into your inbox within 24 business hours.`);
+                contactForm.reset(); // Wipe values clean securely after confirmation alert
+            }
+        });
+    </script>
     <script src="../itis3135/scripts/HTMLInclude.min.js"></script>
     <script src="https://divonbriesen.github.io/web123/scripts/standards-check.js" defer></script>
 </body>
