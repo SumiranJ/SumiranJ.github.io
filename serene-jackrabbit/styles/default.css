@@ -33,3 +33,69 @@ footer p,
 header nav{
     text-align: center;
 }
+
+.image-window {
+    width: 162px; /* Exactly half of your 324px original width */
+    height: 178px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 3px solid #fcbf49;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.image-window img {
+    display: block;
+    height: 100%;
+    width: 324px; /* Keeps natural dimension asset ratio */
+    object-fit: cover;
+    object-position: left center; /* Shifts horizontally via JavaScript */
+    transition: object-position 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* --- NEW: PACE TRACKER COMPONENT --- */
+.tracker-box {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 500px;
+    border: 1px solid rgba(234, 226, 183, 0.2);
+}
+
+.tracker-box label {
+    display: block;
+    color: #eae2b7;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.pace-slider {
+    width: 100%;
+    cursor: pointer;
+    accent-color: #f77f00;
+}
+
+/* --- NEW: DYNAMIC PRODUCT BOX --- */
+.recommendation-panel {
+    background: rgba(214, 40, 40, 0.15);
+    border-left: 4px solid #f77f00;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.recommendation-panel h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+}
+
+.recommendation-panel p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #FFFFFF;
+}

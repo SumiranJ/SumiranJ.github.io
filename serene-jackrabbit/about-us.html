@@ -22,12 +22,64 @@
             <strong>physical therapy recovery protocols</strong> (like tactile grounding sand and acupressure tools) 
             to treat mind and body as one.
         </p>
-        <img src="../itis3135/images/exercising_resting.webp" alt="jackrabbits shown exercising and relaxing" height="178" width="324">
+        <!-- PACE TRACKER CONTROLLER SLIDER -->
+        <div class="tracker-box">
+            <label for="aboutPaceInput">🔄 Adjust to scan our active/rest methods:</label>
+            <input type="range" id="aboutPaceInput" class="pace-slider" min="1" max="2" value="1">
+        </div>
+
+        <!-- CLIPPED GRAPHIC VIEWPORT WINDOW -->
+        <div class="image-window">
+            <img id="mascotImage" src="../itis3135/images/exercising_resting.webp" alt="jackrabbits shown exercising and relaxing" height="178" width="324">
+        </div>
+
+        <!-- DYNAMIC RECOMMENDATION TARGET REGION -->
+        <div id="kitRecommendation" class="recommendation-panel">
+            <h3>🧡 Recommended: The Release Kit</h3>
+            <p>Perfect for handling high energy! Tap into athletic conditioning with our matte-black high-speed agility ropes and tactical weights to vent stress constructively.</p>
+        </div>
         
     </main>
+
+    <!-- --- JAVASCRIPT ANIMATED IMAGE VIEWPORT AND TEXT CONTROLLER --- -->
+    <script>
+        // 1. Establish data maps mapping slider inputs to custom recommendations and crop rules
+        const viewStates = {
+            1: {
+                cropPosition: "left center", // Focuses on Left Side (Exercising)
+                kitTitle: "🧡 Recommended: The Release Kit",
+                kitDesc: "Perfect for handling high energy! Tap into athletic conditioning with our matte-black high-speed agility ropes and tactical weights to vent stress constructively."
+            },
+            2: {
+                cropPosition: "right center", // Shifts window to Right Side (Relaxing)
+                kitTitle: "💙 Recommended: The Restore Kit",
+                kitDesc: "Perfect for draining anxiety or physical crashing. Rest comfortably using our posture-correcting cork rollers, standing acupressure foot mats, and soothing lavender eye pillows."
+            }
+        };
+
+        // 2. Element targets
+        const paceSlider = document.getElementById("aboutPaceInput");
+        const cropTarget = document.getElementById("mascotImage");
+        const panelHeading = document.querySelector("#kitRecommendation h3");
+        const panelBody = document.querySelector("#kitRecommendation p");
+
+        // 3. Execution Controller
+        paceSlider.addEventListener("input", (e) => {
+            const currentConfig = viewStates[e.target.value];
+            
+            // Adjust the CSS object alignment matrix seamlessly 
+            cropTarget.style.objectPosition = currentConfig.cropPosition;
+            
+            // Rewrite panel strings dynamically
+            panelHeading.textContent = currentConfig.kitTitle;
+            panelBody.textContent = currentConfig.kitDesc;
+        });
+    </script>
+
+
+
     <div data-include="components/footer.html"></div>
     <script src="../itis3135/scripts/HTMLInclude.min.js"></script>
-    <!-- <script src="scripts/HTMLInclude.min.js"></script> -->
     <script src="https://divonbriesen.github.io/web123/scripts/standards-check.js" defer></script>
 </body>
 </html>
