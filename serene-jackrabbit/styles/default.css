@@ -112,7 +112,7 @@ header nav{
 }
 
 /* Class added via JS to create a gentle error shake animation */
-.shake-error {
+/* .shake-error {
     animation: shake 0.3s ease-in-out;
     border-color: #d62828 !important;
 }
@@ -121,4 +121,4 @@ header nav{
     0%, 100% { transform: translateX(0); }
     20%, 60% { transform: translateX(-6px); }
     40%, 80% { transform: translateX(6px); }
-}
+} */
