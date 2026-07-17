@@ -47,6 +47,7 @@ header nav{
     display: block;
     height: 100%;
     width: 324px; /* Keeps natural dimension asset ratio */
+    min-width:324px;
     object-fit: cover;
     object-position: left center; /* Shifts horizontally via JavaScript */
     transition: object-position 0.4s cubic-bezier(0.25, 1, 0.5, 1);
