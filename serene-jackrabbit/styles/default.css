@@ -7,14 +7,16 @@ body, header, footer{
 }
 
 h1, h2, h3{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Syne', sans-serif;
+    font-weight:800;
     color:#f77f00;
 }
 
 p, ul, ol, li, nav, blockquote, label{
     color:#eae2b7;
     text-align:left;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height:1.5;
 }
 
 a, a:visited{
