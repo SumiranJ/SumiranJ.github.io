@@ -165,6 +165,12 @@ textarea.form-control {
     transition: background 0.2s ease, transform 0.1s ease;
 }
 
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically (requires a set height) */
+}
+
 .submit-btn:hover {
     background: #fcbf49;
 }
@@ -213,7 +219,7 @@ textarea.form-control {
 .kit-list {
     padding-left: 15px;
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 20px;
 }
 
 .kit-points {
