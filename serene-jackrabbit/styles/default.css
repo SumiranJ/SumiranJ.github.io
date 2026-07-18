@@ -202,13 +202,13 @@ textarea.form-control {
 #restore { border-top: 4px solid #00E5FF; }  /* Energy Recovery Cyan */
 
 .kit-heading {
-    font-size: 0.85rem;
+    font-size: 2rem;
     margin-top: 0;
     margin-bottom: 5px;
 }
 
 .kit-subtitle {
-    font-size: 0.15rem;
+    font-size: 1rem;
     color: #fcbf49;
     font-style: italic;
     margin-bottom: 12px;
