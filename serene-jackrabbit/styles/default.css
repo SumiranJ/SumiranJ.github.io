@@ -111,6 +111,11 @@ header nav{
     text-align: left;
 }
 
+/* figure, figcaption{
+    font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    color:#f77f00;
+} */
+
 .form-group {
     margin-bottom: 20px;
     position: relative;
@@ -191,13 +196,13 @@ textarea.form-control {
 #restore { border-top: 4px solid #00E5FF; }  /* Energy Recovery Cyan */
 
 .kit-heading {
-    font-size: 1.15rem;
+    font-size: 1.35rem;
     margin-top: 0;
     margin-bottom: 5px;
 }
 
 .kit-subtitle {
-    font-size: 0.85rem;
+    font-size: 0.55rem;
     color: #fcbf49;
     font-style: italic;
     margin-bottom: 12px;
