@@ -196,13 +196,13 @@ textarea.form-control {
 #restore { border-top: 4px solid #00E5FF; }  /* Energy Recovery Cyan */
 
 .kit-heading {
-    font-size: 1.35rem;
+    font-size: 0.85rem;
     margin-top: 0;
     margin-bottom: 5px;
 }
 
 .kit-subtitle {
-    font-size: 1.2rem;
+    font-size: 0.15rem;
     color: #fcbf49;
     font-style: italic;
     margin-bottom: 12px;
@@ -213,7 +213,7 @@ textarea.form-control {
 .kit-list {
     padding-left: 15px;
     margin: 0;
-    font-size: 1.25rem;
+    font-size: 0.95rem;
 }
 
 .kit-points {
